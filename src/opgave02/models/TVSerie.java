@@ -1,6 +1,7 @@
 package opgave02.models;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class TVSerie {
     private String title;
@@ -13,5 +14,9 @@ public class TVSerie {
         this.numberOfSeasons = numberOfSeasons;
         this.genres = genres;
         this.cast = cast;
+    }
+
+    public String toString() {
+        return title + " (Number of seasons: " + numberOfSeasons +"), Genres: " + Arrays.toString(genres) + ", cast: " + cast;
     }
 }

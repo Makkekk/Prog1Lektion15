@@ -19,4 +19,9 @@ public class Movie {
         this.rating = rating;
         this.cast = cast;
     }
+
+    public String toString() {
+        return title + " (Producitonyear: " + productionYear + "), Directed by: " + director + ", Genres" + genres + ", rating: " + rating + ", Cast: " + cast;
+
+    }
 }
